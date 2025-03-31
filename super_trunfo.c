@@ -34,12 +34,15 @@ int main(){
     printf("Digite o numero de pontos turisticos: \n");
     scanf("%d", &numero_pontos_turisticos_1);
 
+
     //ENTRADA DE DADOS CARTA 02
     printf("DIGITE AGORA AS INFORMAÇÕES DA CARTA 02 \n");
 
+    getchar(); //limpeza de buffer para apresentar a proxima informação sem erro
     printf("Digite o estado: \n");
-    scanf("%s", estado_2);
+    scanf("%c", estado_2);
 
+    getchar();
     printf("Digite o codigo da carta: \n");
     scanf("%s", codigo_2);
 
@@ -80,7 +83,7 @@ int main(){
     //SAIDA DE DADOS DA CARTA 02
     printf("VEJA ABAIXO AS INFORMAÇÕES DA CARTA 02 \n");
 
-    printf("ESTADO: %s \n", estado_2);
+    printf("ESTADO: %c \n", estado_2);
 
     printf("CODIGO: %s \n", codigo_2);
 
